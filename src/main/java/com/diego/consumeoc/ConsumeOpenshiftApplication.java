@@ -27,7 +27,7 @@ public class ConsumeOpenshiftApplication {
 		return args -> {
 
 			ResponseEntity<String> restExchange = restTemplate.exchange(
-					"https://diego-node-secrets-test.apps-np.sis.ad.bia.itau", HttpMethod.GET, null, String.class);
+					"https://bla/integracion/empresa?wsdl", HttpMethod.GET, null, String.class);
 
 			log.info(restExchange.getBody());
 		};
